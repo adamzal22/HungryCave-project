@@ -19,7 +19,7 @@
 <hr>
 <ul>
 <c:forEach items="${posts}" var="p">
-   <li> <strong><c:out value="${p.message}"/></strong></li>
+   <li> <a href="/user/findRestaurant?idToFind=${p.restaurant.id}"><strong><c:out value="${p.restaurant.name}"/> </a> : <c:out value="${p.message}"/></strong></li>
 
 </c:forEach>
 </ul>
